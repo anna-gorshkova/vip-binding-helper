@@ -16,7 +16,7 @@
 body {
     font-size: 40px;
     color:beige;
-    font-family: Stolzl;
+    font-family: Stolzl, sans-serif;
     font-weight: 400;
     font-size: 16px;
     display: flex;
