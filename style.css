@@ -1,0 +1,307 @@
+:root {
+    --bg-color: #101011;
+    --clr-error: #F14D4D;
+    --clr-normal: #87E2AE;
+    --clr-text-default: #767676;
+    --clr-main-gradient: linear-gradient(180deg, #E5F280 0%, #87E2AE 100%);
+    --clr-green-gradient: linear-gradient(180deg, #87E2AE 0%, rgba(135, 226, 174, 0.00) 48.44%, #87E2AE 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 40px;
+    color:beige;
+    font-family: Stolzl;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #000;
+    padding: 32px;  
+}
+
+.info-panel {
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    min-height: 200px;
+    padding: 16px;
+    margin-bottom: 48px;
+}
+
+.info-panel_title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.info-panel_subtitle {
+    text-align: center;
+    
+}
+
+.info-panel_content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.info-panel_content-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 280px;
+    padding: 8px;
+      
+}
+
+
+
+.info-panel_content-item > svg {
+    margin-top: 16px;
+}
+
+.info-panel_classes {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    margin-top: 8px;
+    padding: 10px;
+    width: 200px;
+}
+
+.info-panel_classes p{
+    font-size: 12px;
+    color: var(--clr-text-default)
+}
+
+.info-panel_classes p:first-child {
+    margin-bottom: 8px;
+}
+
+.info-panel_classes .classes{
+    width: 100%;
+    min-height: 24px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 4px 24px;
+    background-color: beige;
+    cursor: text;
+    position: relative;
+    flex: 1;
+}
+
+
+.classes_copy-button {
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transition: all 200ms linear;
+}
+
+
+.classes_copy-button svg {
+    transition: all 300ms ease;
+    fill-opacity: 0.7;
+}
+.classes_copy-button:hover svg {
+    transition: all 300ms ease;
+    fill-opacity: 1;
+}
+.classes_copy-button svg path{
+    fill: var(--clr-text-default);
+}
+
+
+.info-panel_message {
+
+    font-family: Stolzl;
+    font-size: 10px;
+    color: var(--clr-text-default);
+
+    position: absolute;
+    right: 0;
+
+    z-index: 10;
+
+    min-height: 16px;
+    padding: 2px 4px;
+    line-height: 16px;
+    
+    background-color: #242424;
+    border-radius: 4px;
+
+    transform: translate(100%, 20%);
+    transition: all 200ms linear;
+
+    pointer-events: none;
+    opacity: 0;
+
+}
+
+.info-panel_message.info-panel_message__visible {
+    transform: translate(100%, 0);
+    opacity: 1;
+}
+
+/****** СТИЛИ ДЛЯ СОСТОЯНИЙ ЭЛЕМЕНТОВ ******/
+
+
+/* Влажность */
+
+.vip-humidity_error .humidity_icon_img path {
+    fill: var(--clr-error);
+}
+
+
+.vip-humidity_error .humidity_icon_border {
+    stroke: var(--clr-error);
+}
+
+
+
+/* Фильтры */
+
+.vip-filter_error .line {
+    fill: url(#red_filter_gradient);
+}
+
+.vip-filter_error .border_lines,
+.vip-filter_error .filter_icon_img rect{
+    stroke: var(--clr-error);
+}
+
+.vip-filter_error .filter_point,
+.vip-filter_error .filter_border_top,
+.vip-filter_error .filter_icon_img .filter_sym {
+    fill: var(--clr-error);
+}
+
+
+/* Вентиляция */
+
+@keyframes vip-fan-rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+        transform: rotate(360deg);
+    }
+  }
+
+  .vip-fan_active .fan_img {
+    transform-origin: center center;
+    animation: 1s linear infinite vip-fan-rotate;
+    fill: url(#vip-fan-gradient);
+  }
+
+  .vip-fan_error .fan_img {
+    fill: var(--clr-error);
+  }
+
+
+
+/* Заслонка */
+.vip-zaslonka_closed path {
+    fill: #767676;
+}
+
+.vip-zaslonka_closed .zaslonka_border {
+    stroke: #767676;
+}
+
+.vip-zaslonka_closed .zaslonka{
+    transform-origin: center center;
+    transform: rotate(90deg);
+}
+
+
+/* Регулирование температуры */
+.vip-reg_tempY_closed .reg_tempY_img path {
+    fill: #767676;
+}
+
+.vip-reg_tempY_closed .reg-tempY_border {
+    stroke: #767676;
+}
+
+.vip-reg_tempY_closed .reg_tempY_zasl{
+    transform-origin: 27.5px 11.5px;
+    fill: #767676;
+    transform: rotate(90deg);
+}
+
+.vip-reg_tempY_half .reg_tempY_zasl{
+    transform-origin: 27.5px 11.5px;
+    transform: rotate(-45deg);
+}
+
+/* Протечка */
+
+.vip-leak_error path {
+    fill: var(--clr-error);
+}
+
+.vip-leak_error .vip-ls_border {
+    stroke: var(--clr-error);
+}
+
+
+
+
+
+@media (min-width: 656px) { 
+
+    .info-panel_content-item:nth-child(2n-1) {
+        border-right: 1px solid #242424;
+    }
+    
+    .info-panel_content-item:last-child {
+        border-right: none;
+    }
+    .info-panel_content-item:nth-child(3) {
+        border-top: 1px solid #242424;
+    }
+    
+    .info-panel_content-item:nth-child(4) {
+        border-top: 1px solid #242424;
+    }
+}
+
+@media (max-width: 655px) { 
+
+    .info-panel_content-item {
+        border-bottom: 1px solid #242424;
+    }
+    .info-panel_content-item:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 350px) { 
+
+    .info-panel_title {
+        font-size: 24px;
+    }
+}
