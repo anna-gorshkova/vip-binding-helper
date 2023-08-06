@@ -268,7 +268,257 @@ body {
 }
 
 
+/* Системные иконки */
 
+.svg-container {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: visible;
+}
+.svg-container_error,
+.svg-container {
+    margin-top: 16px;
+}
+.svg-container_error .vip-error-in-system path {
+    fill: var(--clr-error);
+}
+.svg-container_error::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: var(--clr-error);
+    opacity: 60%;
+    animation:  pulse 1.2s ease-out infinite;
+}
+
+@keyframes pulse {
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+
+
+/* Индикатор для скорости вращения вентилятора */
+#speed_color_ind {
+    --speed: 10;
+    stroke-dasharray: calc(var(--speed)*0.98px) 98;
+}
+
+
+.controls {
+    display: flex;
+    width: 98px;
+}
+.button {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #767676;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: all 300ms ease-out;
+}
+
+.button:hover {
+    background-color: #2E2F32;
+}
+.button.button_minus {
+    border-radius:4px 0 0 4px;
+}
+
+.button.button_plus{
+    border-radius:0 4px 4px 0;
+}
+.input_speed_value {
+    width: 52px;
+    outline: none;
+    height: 100%;
+    border: none;
+    border-top: 1px solid #767676;
+    border-bottom: 1px solid #767676;
+    background: none;
+    text-align: center;
+
+    color: #87E2AE;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Stolzl, sans-serif;
+}
+
+
+
+/*Статус*/
+
+.vip-label-status {
+    width: 68px;
+    height: 18px;
+
+    border-radius: 15px;
+    border: 1px solid #87E2AE;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-family: Stolzl, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.vip-label-status_normal {
+    border-color: #87E2AE;
+    color: #87E2AE;
+}
+
+/* авария */
+.vip-label-status_danger {
+    border-color: #F14D4D;
+    color: #F14D4D;
+}
+
+/* нет данных */
+.vip-label-status_unknown {
+    border-color: #828282;
+    color: #828282;
+}
+
+
+
+/* РЕЖИМ РАБОТЫ*/
+.vip-label-mode {
+
+    min-width:55px;
+    height: 14px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Stolzl, sans-serif;
+    
+    border-radius: 4px;
+    background: #323232;
+
+}
+
+/* Стили для разных состояний открыт/закрыт */
+
+/* открыт */
+.vip-label-mode_active {
+    color: #87E2AE;
+}
+/* закрыт */
+.vip-label-mode_noactive {
+    color: #828282;
+}
+
+
+/* включён/выключен */
+
+.vip-label-onoff {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 25px;
+    height: 14px;
+
+    font-size: 10px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: Stolzl, sans-serif;
+    color: #87E2AE;
+
+    border-radius: 2px;
+    border: 1px solid #87E2AE;
+}
+
+/* styles for OFF status */
+.vip-label-onoff_noactive {
+    color: #323232;
+    border-color: #323232;
+}
+/* styles for ON status*/
+.vip-label-onoff_active {
+    color: #87E2AE;
+    border-color: #87E2AE;
+}
+
+.info-panel_subtitle.info-panel_subtitle_for_text {
+    margin-bottom: 16px;
+}
+
+
+
+/* Значения параметров */
+
+.vip-label-value {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 62px;
+    height: 20px;
+
+    padding: 2px 8px;
+
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 500;
+    color: #87E2AE;
+
+    border: 1px solid #87E2AE;
+
+}
+/* if uppercase letter*/
+.vip-label-value_uppercase {
+    text-transform: uppercase
+}
+/* if large width (94px)*/
+.vip-label-value_large  {
+    min-width: 94px;
+}
+
+/* if medium width (71px)*/
+.vip-label-value_medium {
+    min-width: 71px;
+}
+
+
+/* if left alignment */
+.vip-label-value_left  {
+    justify-content: flex-start;
+}
+
+/* if value out of range */
+.vip-label-value_beyond  {
+    border-color: var(--clr-error);
+    color: var(--clr-error);
+}
 
 
 @media (min-width: 656px) { 
