@@ -190,14 +190,16 @@ body {
     fill: url(#red_filter_gradient);
 }
 
-.vip-filter_error .border_lines,
-.vip-filter_error .filter_icon_img rect{
+.vip-filter_error .filter_icon_img rect,
+.vip-filter_error .border_lines
+{
     stroke: var(--clr-error);
 }
 
-.vip-filter_error .filter_point,
-.vip-filter_error .filter_border_top,
-.vip-filter_error .filter_icon_img .filter_sym {
+
+.vip-filter_error .filter_border_lines path,
+.vip-filter_error .filter_border_lines rect,
+.vip-filter_error .filter_icon_img path {
     fill: var(--clr-error);
 }
 
@@ -271,6 +273,17 @@ body {
     stroke: var(--clr-error);
 }
 
+
+/* Перепад давления */
+.vip-pds.vip-pds_error .pds_border rect,
+.vip-pds.vip-pds_error .pds_border path,
+.vip-pds.vip-pds_error .pds_img path {
+    fill: var(--clr-error);
+}
+
+.vip-pds.vip-pds_error .pds_img rect{
+    stroke: var(--clr-error)
+}
 
 /* Системные иконки */
 

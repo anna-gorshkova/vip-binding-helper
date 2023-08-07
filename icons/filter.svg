@@ -1,0 +1,42 @@
+<svg width="120" height="75" viewBox="0 0 120 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="36.5" y="41.5" width="47" height="32.3" rx="2" fill="#242424"/>
+    <rect class="line" x="37" y="42" width="46" height="5.33333" fill="url(#green_filter_gradient)"/>
+    <rect class="line" x="37" y="47.2" width="46" height="5.33333" fill="url(#green_filter_gradient)"/>
+    <rect class="line" x="37" y="52.4" width="46" height="5.33333" fill="url(#green_filter_gradient)"/>
+    <rect class="line" x="37" y="57.6" width="46" height="5.33333" fill="url(#green_filter_gradient)"/>
+    <rect class="line" x="37" y="62.8" width="46" height="5.33333" fill="url(#green_filter_gradient)"/>
+    <rect class="line" x="37" y="68" width="46" height="5.33333" fill="url(#green_filter_gradient)"/>
+
+    <rect class="border_lines" x="36.5" y="41.5" width="47" height="33" rx="2" stroke="#87E2AE"/>
+
+    <g class = 'filter_border_lines'>
+        <rect x="3" y="10" width="1" height="42" fill="#87E2AE"/>
+        <path d="M3.5 51L7 54.5L3.5 58L0 54.5L3.5 51Z" fill="#87E2AE"/>
+        <circle cx="3.5" cy="54.5" r="1.5" fill="#101011"/>
+
+        <rect x="116" y="10" width="1" height="42" fill="#87E2AE"/>
+        <path d="M116.5 51L120 54.5L116.5 58L113 54.5L116.5 51Z" fill="#87E2AE"/>
+        <circle cx="116.5" cy="54.5" r="1.5" fill="#101011"/>
+    
+        <rect x="4" y="10" width="43.5" height="1" fill="#87E2AE"/>
+        <rect x="72.5" y="10" width="43.5" height="1" fill="#87E2AE"/>
+    </g>
+
+    <g class = 'filter_icon_img'>
+        <path d="M55.63 15V14.35L59.127 5.679H60.18L63.664 14.35V15H55.63ZM56.969 13.947H62.312L60.141 8.279C60.115 8.20967 60.0673 8.084 59.998 7.902C59.9287 7.72 59.8593 7.53367 59.79 7.343C59.7293 7.14367 59.6817 6.992 59.647 6.888C59.6037 7.06133 59.5517 7.239 59.491 7.421C59.439 7.59433 59.3827 7.75467 59.322 7.902C59.27 8.04933 59.2267 8.175 59.192 8.279L56.969 13.947Z" fill="#87E2AE"/>
+        <rect x="48" y="0.5" width="24" height="20" stroke="#87E2AE"/>
+    </g>
+<defs>
+    <linearGradient id="green_filter_gradient" gradientTransform="rotate(90)">
+        <stop stop-color="#87E2AE"/>
+        <stop offset= "48%" stop-color="#87E2AE" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#87E2AE"/>
+    </linearGradient>
+
+    <linearGradient id="red_filter_gradient" gradientTransform="rotate(90)">
+        <stop stop-color="#F14D4D"/>
+        <stop offset= "48%" stop-color="#F14D4D" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#F14D4D"/>
+    </linearGradient>
+</defs>
+</svg>
