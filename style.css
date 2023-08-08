@@ -244,21 +244,21 @@ body {
 
 
 /* Регулирование температуры */
-.vip-reg_tempY_closed .reg_tempY_img path {
+.vip-valve.vip-valve_closed .reg_tempY_img path {
     fill: #767676;
 }
 
-.vip-reg_tempY_closed .reg-tempY_border {
+.vip-valve.vip-valve_closed .reg-tempY_border {
     stroke: #767676;
 }
 
-.vip-reg_tempY_closed .reg_tempY_zasl{
+.vip-valve.vip-valve_closed .reg_tempY_zasl{
     transform-origin: 27.5px 11.5px;
     fill: #767676;
     transform: rotate(90deg);
 }
 
-.vip-reg_tempY_half .reg_tempY_zasl{
+.vip-valve.vip-valve_half .reg_tempY_zasl{
     transform-origin: 27.5px 11.5px;
     transform: rotate(-45deg);
 }
