@@ -1,0 +1,19 @@
+<svg  width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g class = 'vip-pump_stroke'>
+        <path d="M5.5 0.5C7.15685 0.5 8.5 1.84315 8.5 3.5L2.5 3.5C2.5 1.84315 3.84315 0.5 5.5 0.5Z" fill="#101011" stroke="#87E2AE"/>
+        <path d="M5.5 22.5C3.84315 22.5 2.5 21.1569 2.5 19.5L8.5 19.5C8.5 21.1569 7.15685 22.5 5.5 22.5Z" fill="#101011" stroke="#87E2AE"/>
+        <rect x="17.5" y="3.5" width="11" height="16" rx="0.5" stroke="#87E2AE"/>
+        <rect x="3.5" y="3.5" width="4" height="16" rx="0.5" fill="#101011" stroke="#87E2AE"/>
+        <path d="M0.5 7C0.5 5.23676 1.80385 3.77806 3.5 3.53544V19.4646C1.80385 19.2219 0.5 17.7632 0.5 16V7Z" fill="#101011" stroke="#87E2AE"/>
+        <path d="M14.5 7C14.5 5.23676 15.8039 3.77806 17.5 3.53544V19.4646C15.8039 19.2219 14.5 17.7632 14.5 16V7Z" fill="#101011" stroke="#87E2AE"/>
+        <path d="M31.5 7C31.5 5.23676 30.1961 3.77806 28.5 3.53544V19.4646C30.1961 19.2219 31.5 17.7632 31.5 16V7Z" fill="#101011" stroke="#87E2AE"/>
+        <path d="M10.5 7C10.5 5.23676 9.19615 3.77806 7.5 3.53544V19.4646C9.19615 19.2219 10.5 17.7632 10.5 16V7Z" fill="#101011" stroke="#87E2AE"/>
+    </g>
+    <g class = 'vip-pump_fill'>
+        <rect x="10" y="8" width="2" height="7" fill="#87E2AE"/>
+        <path d="M12 8L15 6V17L12 15V8Z" fill="#87E2AE"/>
+        <rect x="18" y="7" width="10" height="1" fill="#87E2AE"/>
+        <rect x="18" y="15" width="10" height="1" fill="#87E2AE"/>
+        <rect x="18" y="11" width="10" height="1" fill="#87E2AE"/>
+    </g>
+</svg>
