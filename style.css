@@ -565,9 +565,16 @@ body {
     fill: var(--clr-error);
 }
 
+/*********** ТЕРМОСТАТ **************/
 
 
+.vip-thermostat.vip-thermostat_error rect {
+    stroke: var(--clr-error);
+}
 
+.vip-thermostat.vip-thermostat_error path {
+    fill: var(--clr-error);
+}
 
 
 
