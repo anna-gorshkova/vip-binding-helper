@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98" height="8" viewBox="0 0 98 8" fill="none">
+    <g clip-path = "url(#clipSpeed)">
+        <path  d="M0 4H98" stroke="#ccc" stroke-width="8" />
+        <path id ="speed_color_ind" stroke-dasharray ="0 98" d="M0 4H98" stroke="url(#vip_gradient)" stroke-width="8" />
+    </g>
+    <defs>
+        <clipPath id = "clipSpeed">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0H0V8H8V0ZM18 0H10V8H18V0ZM20 0H28V8H20V0ZM38 0H30V8H38V0ZM40 0H48V8H40V0ZM58 0H50V8H58V0ZM60 0H68V8H60V0ZM78 0H70V8H78V0ZM80 0H88V8H80V0ZM98 0H90V8H98V0Z" fill="#101011"/>
+        </clipPath>
+        
+        <linearGradient id="vip_gradient" x1="98" y1="8" x2="-2.45" y2="7.99996" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E5F280"/>
+            <stop offset="1" stop-color="#87E2AE"/>
+        </linearGradient>
+    </defs>
+</svg>
