@@ -591,6 +591,19 @@ body {
     fill: var(--clr-error);
 }
 
+
+
+.vip-pump.vip-pump_noactive .vip-pump_stroke path,
+.vip-pump.vip-pump_noactive .vip-pump_stroke rect {
+    stroke: #767676;
+}
+
+.vip-pump.vip-pump_noactive .vip-pump_fill path,
+.vip-pump.vip-pump_noactive .vip-pump_fill rect {
+    fill: #767676;
+}
+
+
 /*********** ТЕРМОСТАТ **************/
 
 
@@ -603,6 +616,37 @@ body {
 }
 
 
+/*********** ЗНАЧЕНИЯ В ПРОЦЕНТАХ **************/
+
+.vip-label-percent {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    min-width: 44px;
+    height: 16px;
+
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+
+/* 0% */
+.vip-label-percent.vip-label-percent_noactive {
+    color: #767676;
+}
+/* more than 0% */
+.vip-label-percent.vip-label-percent_active{
+    color: var(--clr-normal);
+}
+
+/* if  center alignment */
+.vip-label-percent_center{
+    justify-content: center;
+}
 
 @media (min-width: 656px) { 
 
